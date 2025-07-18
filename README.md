@@ -7,16 +7,16 @@
 
 </div>
 
-# LSON-LD
-A LSON-LD library for Swift.
+# JSON-LD
+A JSON-LD library for Swift.
 
-This is an implementation of the [LSON-LD](https://json-ld.org) specification.
+This is an implementation of the [JSON-LD](https://json-ld.org) specification.
 
 ## Integration
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/mattmassicotte/LSON-LD", branch: "main")
+    .package(url: "https://github.com/mattmassicotte/JSONLD", branch: "main")
 ]
 ```
 

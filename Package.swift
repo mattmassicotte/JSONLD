@@ -3,18 +3,18 @@
 import PackageDescription
 
 let package = Package(
-	name: "LSONLD",
+	name: "JSONLD",
 	products: [
 		.library(
-			name: "LSONLD",
-			targets: ["LSONLD"]),
+			name: "JSONLD",
+			targets: ["JSONLD"]),
 	],
 	targets: [
 		.target(
-			name: "LSONLD"),
+			name: "JSONLD"),
 		.testTarget(
-			name: "LSONLDTests",
-			dependencies: ["LSONLD"]
+			name: "JSONLDTests",
+			dependencies: ["JSONLD"]
 		),
 	]
 )

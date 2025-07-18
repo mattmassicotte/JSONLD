@@ -1,8 +1,8 @@
 import Foundation
 import Testing
-import LSONLD
+import JSONLD
 
-struct LSONLDTests {
+struct JSONLDTests {
 	@Test func keywordMapDecode() async throws {
 		let content = """
 {"@id": "hello", "@type": "sometype"}
