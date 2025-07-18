@@ -1,24 +1,20 @@
 // swift-tools-version: 6.1
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "LSON-LD",
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "LSON-LD",
-            targets: ["LSON-LD"]),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "LSON-LD"),
-        .testTarget(
-            name: "LSON-LDTests",
-            dependencies: ["LSON-LD"]
-        ),
-    ]
+	name: "LSONLD",
+	products: [
+		.library(
+			name: "LSONLD",
+			targets: ["LSONLD"]),
+	],
+	targets: [
+		.target(
+			name: "LSONLD"),
+		.testTarget(
+			name: "LSONLDTests",
+			dependencies: ["LSONLD"]
+		),
+	]
 )

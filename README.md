@@ -20,6 +20,31 @@ dependencies: [
 ]
 ```
 
+## Usage
+
+```swift
+import JSONLD
+
+// decode
+let document = try JSONDecoder().decode(ContextOnlyDocument.self, from: jsonldData)
+
+print(document.context)
+
+// encode
+let document = ContextOnlyDocument(
+    context: [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1",
+        [
+            "manuallyApprovesFollowers": "as:manuallyApprovesFollowers",
+            "alsoKnownAs": [.id: "as:alsoKnownAs", .type: "@id"],
+        ],
+    ]
+)
+
+let data = try JSONEncoder().encode(document)
+```
+
 ## Contributing and Collaboration
 
 I would love to hear from you! Issues or pull requests work great. Both a [Matrix space][matrix] and [Discord][discord] are available for live help, but I have a strong bias towards answering in the form of documentation. You can also find me on [the web](https://www.massicotte.org).
